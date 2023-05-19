@@ -10,7 +10,7 @@ welcome_text = Label(text="Welcome to my first graphics program.", fg="green", b
 welcome_text.pack()
 
 # Button
-click_me = Button(text="Click Me", fg="red", bg="light green")
+click_me = Button(text="Click Me", fg="red", bg="light green")  # --> add (height=10, width=20) for more modification.
 click_me.place(x=10, y=20)
 
 screen.mainloop()
