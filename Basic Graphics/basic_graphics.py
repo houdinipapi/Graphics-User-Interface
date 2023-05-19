@@ -1,5 +1,10 @@
 from tkinter import *
 
+
+def run():
+    print("Hey, you clicked me!!")
+
+
 # Screen
 screen = Tk()
 screen.title("My First Graphics Program")
