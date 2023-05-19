@@ -20,6 +20,6 @@ click_me.place(x=10, y=20)
 
 # On clicking,text appears on screen
 new_text = Label(text="Hey, you clicked me!!", fg="red", bg="yellow")
-new_text.pack
+new_text.pack()
 
 screen.mainloop()
