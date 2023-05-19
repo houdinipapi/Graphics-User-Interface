@@ -36,7 +36,7 @@ name_button = Button(text="Name", fg="light blue", bg="green", command=name_btn)
 name_button.place(x=200, y=40)
 
 delete_button = Button(text="Delete", fg="red", bg="yellow", command=delete_btn)
-delete_button.place(x=200, y=50)
+delete_button.place(x=200, y=80)
 
 # Entry type
 name_storage = StringVar()
