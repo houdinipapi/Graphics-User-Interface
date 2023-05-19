@@ -15,6 +15,10 @@ def name_btn():
     print(new_name)
 
 
+def delete_btn():
+    new_name.delete(0, END)
+
+
 # Screen
 screen = Tk()
 screen.title("My First Graphics Program")
@@ -30,6 +34,9 @@ click_me.place(x=10, y=20)
 
 name_button = Button(text="Name", fg="light blue", bg="green", command=name_btn)
 name_button.place(x=200, y=40)
+
+delete_button = Button(text="Delete", fg="red", bg="yellow", command=delete_btn)
+delete_button.place(x=200, y=50)
 
 # Entry type
 name_storage = StringVar()
