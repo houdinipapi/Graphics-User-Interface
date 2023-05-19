@@ -29,7 +29,7 @@ click_me = Button(text="Click Me", fg="red", bg="light green", command=run)  # -
 click_me.place(x=10, y=20)
 
 name_button = Button(text="Name", fg="light blue", bg="green", command=name_btn)
-name_button.place(x=10, y=50)
+name_button.place(x=200, y=50)
 
 # Entry type
 name_storage = StringVar()
