@@ -10,6 +10,11 @@ def run():
     new_text.pack()
 
 
+def name_btn():
+    new_name = name_storage.get()
+    print(new_name)
+
+
 # Screen
 screen = Tk()
 screen.title("My First Graphics Program")
@@ -22,6 +27,14 @@ welcome_text.pack()
 # Button
 click_me = Button(text="Click Me", fg="red", bg="light green", command=run)  # --> add (height=10, width=20) for more modification.
 click_me.place(x=10, y=20)
+
+name_button = Button(text="Name", fg="light blue", bg="green", command=name_btn)
+name_button.place(x=10, y=50)
+
+# Entry type
+name_storage = StringVar()
+new_name = Entry(textvariable=name_storage)
+new_name.pack()
 
 
 screen.mainloop()
