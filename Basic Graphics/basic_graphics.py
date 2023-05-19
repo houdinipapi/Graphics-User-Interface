@@ -18,4 +18,8 @@ welcome_text.pack()
 click_me = Button(text="Click Me", fg="red", bg="light green", command=run)  # --> add (height=10, width=20) for more modification.
 click_me.place(x=10, y=20)
 
+# On clicking,text appears on screen
+new_text = Label(text="Hey, you clicked me!!", fg="red", bg="yellow")
+new_text.pack
+
 screen.mainloop()
