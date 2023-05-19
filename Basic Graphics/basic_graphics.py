@@ -9,4 +9,8 @@ screen.geometry("500x500")
 welcome_text = Label(text="Welcome to my first graphics program.", fg="green", bg="light blue")
 welcome_text.pack()
 
+# Button
+click_me = Button(text="Click Me", fg="red", bg="light green")
+click_me.place(x=10, y=20)
+
 screen.mainloop()
