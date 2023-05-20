@@ -17,4 +17,9 @@ first_name_label.place(x=15, y=70)
 last_name_label.place(x=15, y=140)
 age_label.place(x=15, y=210)
 
+# Storing the variables
+first_name = StringVar()
+last_name = StringVar()
+age = IntVar()
+
 screen.mainloop()
