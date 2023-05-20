@@ -12,12 +12,12 @@ def save_info():
 
     # Writing the file
     f_hand = open("user.txt", "w")
-    f_hand.write(first_name)
-    f_hand.write(last_name)
-    f_hand.write(age)
+    f_hand.write(f"First Name: {first_name}\n")
+    f_hand.write(f"Last Name: {last_name}\n")
+    f_hand.write(f"Age: {age}\n")
     f_hand.close()
 
-    print(f"User {first_name} has been registered successfully!")
+    print(f"User {first_name} has been registered successfully!")  # --> Prints on the console
 
 
 # Initializing screen display
