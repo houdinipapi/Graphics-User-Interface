@@ -8,7 +8,11 @@ def save_info():
     last_name = last_name_var.get()
     age = age_var.get()
     age = str(age)
-    print(f"First Name: {first_name}\nLast Name: {last_name}\nAge: {age}")
+    print(f"First Name: {first_name}\nLast Name: {last_name}\nAge: {age}")  # --> Checking functionality
+
+    # Writing the file
+    f_hand = open("user.txt", "w")
+    f_hand.write(first_name)
 
 
 # Initializing screen display
