@@ -19,6 +19,11 @@ def save_info():
 
     print(f"User {first_name} has been registered successfully!")  # --> Prints on the console
 
+    # Clearing the form/screen
+    first_name_entry.delete(0, END)
+    last_name_entry.delete(0, END)
+    age_entry.delete(0, END)
+
 
 # Initializing screen display
 screen = Tk()
