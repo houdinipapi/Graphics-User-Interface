@@ -33,7 +33,7 @@ last_name_entry.place(x=15, y=170)
 age_entry.place(x=15, y=240)
 
 # Creating register button
-register_btn = Button(text="REGISTER", width=25, height=2, bg="light blue")
+register_btn = Button(text="REGISTER", width=20, height=1, bg="light blue")
 register_btn.place(x=15, y=300)
 
 screen.mainloop()
