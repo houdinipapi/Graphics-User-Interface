@@ -7,6 +7,15 @@ def error():
     screen1.geometry("150x90")
     screen1.title("WARNING!!")
     Label(screen1, text="All fields are required!!", fg="red").pack()
+    Button(screen1, text="OK", command=delete1).pack()
+
+
+def delete1():
+    screen1.destroy()
+
+
+def delete2():
+    screen2.destroy()
 
 
 def register():
