@@ -3,18 +3,19 @@ from tkinter import *
 
 # Defining command functionality
 def save_info():
-    print("CLICKED!!")
+    print("CLICKED!!")  # --> Printing on the console
     first_name = first_name_var.get()
     last_name = last_name_var.get()
     age = age_var.get()
     age = str(age)
+    print(f"First Name: {first_name}\nLast Name: {last_name}\nAge: {age}")
 
 
 # Initializing screen display
 screen = Tk()
 screen.geometry("500x500")
 screen.title("Python Form")
-heading = Label(text="Basic Python Form", bg="grey")
+heading = Label(text="Basic Python Registration Form", bg="grey")
 heading.pack()
 
 # User Labels
