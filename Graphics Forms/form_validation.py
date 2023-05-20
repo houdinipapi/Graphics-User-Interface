@@ -37,6 +37,10 @@ def register():
         success()
 
 
+def exit_screen():
+    screen.destroy()
+
+
 # Screen initialization
 screen = Tk()
 screen.geometry("500x500")
@@ -66,5 +70,9 @@ password_entry.place(x=15, y=150)
 # Validation Button
 register_btn = Button(screen, text="REGISTER", width=10, fg="black", bg="light green", command=register)
 register_btn.place(x=15, y=210)
+
+# Exit Button
+exit_btn = Button(screen, text="EXIT", width=7, fg="green", bg="light grey", command=exit_screen)
+exit_btn.place(x=120, y=210)
 
 screen.mainloop()
