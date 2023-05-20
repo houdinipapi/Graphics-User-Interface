@@ -15,4 +15,12 @@ username_label.place(x=15, y=50)
 password_label = Label(text="Password:")
 password_label.place(x=15, y=120)
 
+# Variables Storage
+username_var = StringVar()
+password_var = StringVar()
+
+# Entries
+username_entry = Entry(screen, textvariable=username_var, width=30)
+username_entry.place(x=15, y=80)
+
 screen.mainloop()
