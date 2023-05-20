@@ -4,6 +4,10 @@ from tkinter import *
 # Defining command functionality
 def save_info():
     print("CLICKED!!")
+    first_name = first_name_var.get()
+    last_name = last_name_var.get()
+    age = age_var.get()
+    age = str(age)
 
 
 # Initializing screen display
