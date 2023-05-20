@@ -13,6 +13,11 @@ def save_info():
     # Writing the file
     f_hand = open("user.txt", "w")
     f_hand.write(first_name)
+    f_hand.write(last_name)
+    f_hand.write(age)
+    f_hand.close()
+
+    print(f"User {first_name} has been registered successfully!")
 
 
 # Initializing screen display
