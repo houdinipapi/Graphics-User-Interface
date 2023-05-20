@@ -18,6 +18,13 @@ def delete2():
     screen2.destroy()
 
 
+def success():
+    global screen2
+    screen2 = Toplevel(screen)
+    screen2.geometry("150x90")
+    screen2.title("SUCCESS!!")
+
+
 def register():
     username_text = username_var.get()
     password_text = password_var.get()
