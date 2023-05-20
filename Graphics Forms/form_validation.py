@@ -1,9 +1,20 @@
 from tkinter import *
 
 
+def error():
+    global screen1
+    screen1 = Toplevel(screen)
+    screen1.geometry("150x90")
+    screen1.title("WARNING!!")
+    Label(screen1, text="All fields are required!!", fg="red").pack()
+
+
 def register():
     username_text = username_var.get()
     password_text = password_var.get()
+
+    if username_text == "" or password_text == "":
+        error()
 
 
 # Screen initialization
