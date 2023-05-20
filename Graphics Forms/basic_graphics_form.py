@@ -25,9 +25,11 @@ age_var = IntVar()
 # Creating Entries
 first_name_entry = Entry(textvariable=first_name_var, width=30)
 last_name_entry = Entry(textvariable=last_name_var, width=30)
-age_var = Entry(textvariable=age_var, width=30)
+age_entry = Entry(textvariable=age_var, width=30)
 
 # Positioning the Entries
 first_name_entry.place(x=15, y=100)
+last_name_entry.place(x=15, y=170)
+age_entry.place(x=15, y=240)
 
 screen.mainloop()
