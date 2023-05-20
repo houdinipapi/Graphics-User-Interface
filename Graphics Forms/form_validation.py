@@ -9,4 +9,10 @@ screen.title("Form Validation")
 heading = Label(text="Python Form Validation", fg="black", bg="grey", width=500, height=2)
 heading.pack()
 
+# Entry Labels
+username_label = Label(text="Username:")
+username_label.place(x=15, y=50)
+password_label = Label(text="Password:")
+password_label.place(x=15, y=120)
+
 screen.mainloop()
