@@ -23,6 +23,7 @@ def success():
     screen2 = Toplevel(screen)
     screen2.geometry("150x90")
     screen2.title("SUCCESS!!")
+    Label(screen2, text="Registration Successful!!", fg="black", bg="light green").pack()
 
 
 def register():
@@ -31,6 +32,8 @@ def register():
 
     if username_text == "" or password_text == "":
         error()
+    else:
+        success()
 
 
 # Screen initialization
