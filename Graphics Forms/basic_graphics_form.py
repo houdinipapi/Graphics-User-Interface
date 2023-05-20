@@ -25,11 +25,15 @@ age_var = IntVar()
 # Creating Entries
 first_name_entry = Entry(textvariable=first_name_var, width=30)
 last_name_entry = Entry(textvariable=last_name_var, width=30)
-age_entry = Entry(textvariable=age_var, width=30)
+age_entry = Entry(textvariable=age_var, width=15)
 
 # Positioning the Entries
 first_name_entry.place(x=15, y=100)
 last_name_entry.place(x=15, y=170)
 age_entry.place(x=15, y=240)
+
+# Creating register button
+register_btn = Button(text="REGISTER", width=25, height=2, bg="light blue")
+register_btn.place(x=15, y=300)
 
 screen.mainloop()
