@@ -1,5 +1,11 @@
 from tkinter import *
 
+
+# Defining command functionality
+def save_info():
+    print("CLICKED!!")
+
+
 # Initializing screen display
 screen = Tk()
 screen.geometry("500x500")
@@ -33,7 +39,7 @@ last_name_entry.place(x=15, y=170)
 age_entry.place(x=15, y=240)
 
 # Creating register button
-register_btn = Button(text="REGISTER", width=20, height=1, bg="light blue")
-register_btn.place(x=15, y=300)
+register_btn = Button(text="REGISTER", width=20, height=1, bg="light blue", command=save_info)
+register_btn.place(x=15, y=310)
 
 screen.mainloop()
