@@ -23,4 +23,7 @@ password_var = StringVar()
 username_entry = Entry(screen, textvariable=username_var, width=30)
 username_entry.place(x=15, y=80)
 
+password_entry = Entry(screen, textvariable=password_var, width=30, show="*")
+password_entry.place(x=15, y=150)
+
 screen.mainloop()
