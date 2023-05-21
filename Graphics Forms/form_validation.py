@@ -1,32 +1,36 @@
 from tkinter import *
 
 
+# Defining Error
 def error():
     global screen1
     screen1 = Toplevel(screen)
     screen1.geometry("150x90")
     screen1.title("WARNING!!")
     Label(screen1, text="All fields are required!!", fg="red").pack()
-    Button(screen1, text="OK", command=delete1).pack()
+    Button(screen1, text="OK", command=delete_error).pack()
 
 
-def delete1():
+# Defining delete functionality
+def delete_error():
     screen1.destroy()
 
 
-def delete2():
+def delete_success():
     screen2.destroy()
 
 
+# Defining success functionality
 def success():
     global screen2
     screen2 = Toplevel(screen)
     screen2.geometry("150x90")
     screen2.title("SUCCESS!!")
     Label(screen2, text="Registration Successful!!", fg="green").pack()
-    Button(screen2, text="OK", command=delete2).pack()
+    Button(screen2, text="OK", command=delete_success).pack()
 
 
+# Registering a user
 def register():
     username_text = username_var.get()
     password_text = password_var.get()
@@ -37,6 +41,7 @@ def register():
         success()
 
 
+# Exiting main screen
 def exit_screen():
     screen.destroy()
 
